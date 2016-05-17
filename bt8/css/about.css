@@ -1,0 +1,20 @@
+h1 {
+	text-align: center;
+	color: red;
+	background-color: green;
+}
+
+#menu a{
+	font-size: 30px;
+	color: red;
+	text-decoration: none;
+}
+
+#menu {
+	text-align: center;
+	list-style-type: none;
+	float: left;
+	border: 1px solid #2A2E7B;
+	border-top-width: 5px;
+	width: 22%
+}
