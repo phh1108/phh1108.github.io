@@ -1,0 +1,28 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #E5E5E5;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+}
+.hoverimage{
+	max-width: 1000px;
+	margin: auto;
+}
+
+#main-menu a {
+	border-top-width: 2px;
+	position: absolute;
+	padding: 5px;
+	border-radius: 50%;
+	bottom: 50%;
+	right: 10px;
+	list-style-type:none;
+	margin:0px;
+}

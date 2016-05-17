@@ -1,0 +1,42 @@
+html,body{margin:0;padding: 0;}
+*{box-sizing: border-box;}
+img{max-width: 100%}
+
+body{
+	font-family: "Open Sans", arial, sans-serif;
+	font-weight: 500;
+	background-color: #FFFFFF;
+}
+p{
+	font-size: 18px;
+	color: #218c8d;
+}
+
+@keyframes title {
+	0%  {background-color: #EF7126; color: #F9E559;}
+	20%  {background-color: #6F3662; color: #FFFFFF;}
+	40%  {background-color: #9F6164; color: #F8DEBD;}
+	60%  {background-color: #44B3C2; color: #FFFFFF;}
+	80%  {background-color: #34B6C2; color: #F5E756;}
+	100% {background-color: #218C8D; color: #F9E559;}
+}
+
+h1 {
+	animation: title 6s ease infinite;
+}
+
+h1{
+	margin: 25px 0;
+	font-size:30px;
+	line-height: 1.5em;
+	font-family: Georgia;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #8E0B00;
+}
+
+@keyframes mymove {
+    from {right: 0px;}
+    to {right: 300px;}
+}
+

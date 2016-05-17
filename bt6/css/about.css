@@ -1,0 +1,42 @@
+*{
+	font-size: 20px;
+}
+
+.nhom1
+img {
+	padding: 10px;
+	float: left;
+	width: 33.33333%;
+	border: 0 solid #dddddd;
+	border-top-width: 2px;
+	height: 300px;
+}
+
+.nhom2
+img {
+	padding: 10px;
+	float: left;
+	width: 33.33333%;
+	border: 1px solid #dddddd;
+	border-top-width: 5px;
+	height: 300px
+}
+.nhom3
+img {
+	padding: 10px;
+	float: left;
+	width: 33.33333%;
+	border: 1px solid #dddddd;
+	border-top-width: 5px;
+	height: 300px
+}
+
+.nhom4
+img {
+	padding: 10px;
+	float: left;
+	width: 33.33333%;
+	border: 1px solid #dddddd;
+	border-top-width: 5px;
+	height: 300px
+}
