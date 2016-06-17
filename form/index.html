@@ -9,11 +9,11 @@
 	<div class="wrap">
 		<h1> Welcome to Offical Manchester United Fanclub <br/><br/> 
 			ĐĂNG KÝ TÀI KHOẢN</h1>
-			<form action="result.html">
+			<form action="result.html" id="form-register">
 
 				<img id ="img" src="img/1.jpg">
 
-				<input type="text" id="name" name="name" placeholder="Họ tên" /><br/>
+				<input type="text" id="name" name="name" placeholder="Họ tên" required="reqired" /><span class="error"></span><br/>
 				<p style="color: #0064FF">Ngày, tháng, năm sinh
 					<div id="birthday">
 						<select name="day" id="day"></select>
@@ -26,17 +26,20 @@
 						<input type="radio" name="gender" id="male" value="Nam" /> <label for = "male"> Nam </label>
 						<input type="radio" name="gender"  id="female" value="Nữ" /> <label for="female"> Nữ </label></p>
 
-						<input type="text" id="address" name="address" placeholder="Địa chỉ" /><br/><br/>
+						<input type="text" id="address" name="address" placeholder="Địa chỉ" required="reqired" /><span class="error"></span><br/><br/>
 
-						<input type="text" id="phone" name="phone" placeholder="Số điện thoại" /><br/><br/>
+						<input type="number" id="phone" name="phone" placeholder="Số điện thoại" required="reqired"/><span class="error"></span><br/><br/>
 
-						<input type="text" id="email" name="email" placeholder="Email" /><br/><br/>
+						<input type="email" id="email" name="email" placeholder="Email" required="reqired" /><span class="error"></span><br/><br/>
 
-						<input type="text" id="password" name="password" placeholder="Mật khẩu" /><br/><br/>
+						<input type="text" id="facebook" name="facebook" placeholder="Địa chỉ facebook" required="reqired" /><span class="error"></span><br/><br/>
+
+						<input type="password" id="password" name="password" placeholder="Mật khẩu" required="reqired" /><span class="error"></span><br/><br/>
 
 						<input type="submit" value="Đăng ký"/>
 
-						<script type="text/javascript">
+						<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+						<script>
 							function day(){
 								var chuoi ="";
 								for (i=1;i<=31; i++){
@@ -63,6 +66,14 @@
 								return "<option>Năm</option>" + chuoi;
 							}
 							document.getElementById("year").innerHTML = year();
+
+							$('#form-register').on('submit', function(){
+								if($('#name').val().trim()==''){
+									return false;
+								}
+								return true;
+
+							});
 
 						</script>
 					</form>
