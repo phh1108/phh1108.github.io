@@ -1,0 +1,341 @@
+@media (max-width: 767px){
+
+	.sale img {
+		height: 30px;
+		width: 100%;
+		margin: 0px 0;
+	}
+
+	.spnb {
+		/*display: none;*/
+	}
+	.fn > ul > li {
+		list-style-type: none;
+		color:rgb(255, 237, 0);
+		/*		padding-left: -10px;*/
+	}
+
+	.spm{
+		overflow-x: hidden;
+		overflow-y: hidden;
+		font-size: 25px;
+		color: #0020D4;
+		text-align:center;
+		width: 100%;	
+		padding: 2px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+
+}
+
+/*@media (min-width: 768px){
+	.navbar-nav>li>a {
+		display: none
+	}
+	
+	.thumbnail {
+		height: 410px;
+	}
+
+	.w-img {
+		height: 160px;
+		overflow-y: hidden;
+	}
+
+	h4 {
+		font-size: 15px;
+	}
+
+	h3{
+		font-size: 21px;
+	}
+}
+*/
+/*@media(min-width: 992px){*/
+	*{
+		box-sizing: border-box;
+	}
+
+	/*hinh nen*/
+	body{
+		background: url("../img/background.jpg") center center no-repeat;
+		background-attachment: fixed;
+	}
+
+	/*can chinh 2 ben */
+	.container {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	h1{
+		color: red;
+		text-align: center;
+	}
+
+	/*Màu chữ thanh menu*/
+	.navbar-default .navbar-nav>li>a {
+		color: white;
+		font-size: 14px;
+	}
+
+	/*mau thanh menu tren*/
+	.top .navbar-brand .menu .navbar-brand{
+		color:white;
+
+	}
+
+	/* div trang chủ*/
+	.navbar-default .navbar-brand{
+		/*border-right:1px dashed grey;*/
+		color:white;
+	}
+
+	.navbar-brand{
+		font-size: 15px;
+	}
+	.navbar-default .tieude:hover {
+		color: white;
+		background-color: transparent;
+	}
+	.navbar{
+
+		margin-bottom: 0px;
+		background:#0F6BB5;
+	}
+	/*border cua menu*/
+/*.border-ul li {
+	border-right:1px dashed grey;
+	}*/
+	.border-ul ul li:last-child{
+		border-right: none;
+	}
+
+	/*mau thanh sale*/
+	.panel{
+		background: #EFD88A;
+	}
+
+	/*thanh register*/
+	.register{
+		padding-top: 0px;
+	}
+
+	/*SLIDE CHẠY*/
+	.carousel-inner > .item > a > img {
+		max-height: 410px;
+		width: 100%;
+		margin: auto;
+	}
+
+
+	.listnone{
+		list-style: none;
+		color:rgb(255, 237, 0);
+		padding-left: 1px;
+	}
+
+	/*mau  thanh left*/
+	.well{
+		font-size: 15px;
+		background:#0F6BB5;
+	}
+
+	/*sp noi bat*/
+	h2{
+		color:#e62739;
+	}
+
+	.dropdown-toggle{
+		color: #462066;
+	}
+
+	.thumbnail {
+		text-align: center;
+	}
+
+	.w-img{
+		height: 260px;
+		overflow-y: hidden;
+	}
+	.w-img img{
+		width: 100%;
+	}
+
+	/*màu giá tiền*/
+	h3{
+		color:rgb(0, 76, 253);
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		font-family: Tahoma, sans-serif;
+		text-transform: initial;
+	}
+
+	.container nav-footer{
+		color: #FCF4D9;
+	}
+
+	.btn{
+		font-size: 17px;
+
+	}
+	.sale img{
+		height: 80px;
+		width: 100%;
+		margin:11px 0;
+	}
+
+	/*màu nút thêm vào giỏ*/
+	.btn-danger{
+		background-color: #e62739;
+
+	}
+
+	.btn-default{
+		color: white;
+		background: #0F6BB5;
+	}
+	/*màu tên sản phẩm*/
+	h4{
+		color: black;
+	}
+
+	.carousel-control{
+		opacity: 0;
+	}
+
+
+	/*nút back to top*/
+	.back-to-top{
+		width: 4%;
+		display:scroll;
+		position:fixed;
+		bottom:5px;
+		right:5px;
+		border-radius: 50%;
+	}
+
+	/*icon đặc biệt*/
+
+	.spnb{
+		font-size: 25px;
+		color: #0020D4;
+		text-align: center;
+		width: 100%;	
+		background: #FFED00;
+		padding: 2px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+
+	}
+	
+	.spm{
+		font-size: 25px;
+		color: #0020D4;
+		text-align: center;
+		width: 100%;	
+		background: #FFED00;
+		padding: 2px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	/*màu footer*/
+	.fn > ul > li > a{
+		color: #1D00FF;
+		padding-left: 0px;
+	}
+
+	#info{
+		color: black;
+	}
+
+
+	.end{
+		border-bottom: 1px dashed #ccc;
+		padding-top: 10px;
+	}
+
+	/*Thông tin sp*/
+	.infosp{
+		font-size: 16px;
+	}
+	#footer{
+		padding-top: 10px;
+		background-color: rgba(255, 243, 187, 0.41);
+		padding-bottom: 15px;
+	}
+
+	/*chi tiet sp*/
+	.chitietsp{
+		color: #D3E098;
+	}
+
+	.nav-tabs>li>a {
+		background: #0F6BB5;
+		color: white;
+	}
+
+	/*đổi banner*/
+	.move1{
+		color: #FFF;
+		background: #f96489;
+	}
+
+	.modal-footer .dk{
+		color: blue;
+	}
+
+
+	.modal-footer .submit{
+		/*		background: blue;*/
+		color:black;	
+	}
+
+	.nav-tabs>li.active>a{
+		color: #0F6BB5;
+	}
+
+	.tabs>li.active>a:hover {
+		color: blue;
+	}
+	/*img lego*/
+
+	#chitiet img{
+		/*max-width: 99%;*/
+		margin: 10px auto;
+		border: 5px solid #fff;
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+	}
+
+}
+
+.#chitiet{
+	text-align: center;
+}
+
+.lego-img{
+	margin-top: 20px;
+}
+
+
+/*căn chỉnh thanh footer*/
+ul.footer-links{
+	padding:15px;
+}
+/*}*/
+
+.list-sp{
+	font-size: 25px;
+		color: #0020D4;
+		text-align: center;
+		width: 100%;	
+		background: #FFED00;
+		padding: 2px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+}
