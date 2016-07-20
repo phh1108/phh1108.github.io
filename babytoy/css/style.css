@@ -92,6 +92,9 @@
 		/*border-right:1px dashed grey;*/
 		color:white;
 	}
+	.navbar-default .navbar-brand:hover{
+		color: #F9FF00;
+	}
 
 	.navbar-brand{
 		font-size: 15px;
@@ -331,11 +334,18 @@ ul.footer-links{
 
 .list-sp{
 	font-size: 25px;
-		color: #0020D4;
-		text-align: center;
-		width: 100%;	
-		background: #FFED00;
-		padding: 2px;
-		margin-top: 20px;
-		margin-bottom: 10px;
+	color: #0020D4;
+	text-align: center;
+	width: 100%;	
+	background: #FFED00;
+	padding: 2px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: #F9FF00;
+}
+
+a:hover {
+    color: #F9FF00;
