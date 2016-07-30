@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Đồ Chơi Thông Minh Cho Bé</title>
+	<title>Giỏ hàng của tôi</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -287,92 +287,131 @@
 					</div>							
 				</div>
 
-				<div class="col-sm-9">
-					<a class="sale" href="khuyen-mai.html"><img src="img/sale1.jpg"/></a>
-					<!-- <div class="border-spnb"> -->
-					<div class="container spnb">
-						SẢN PHẨM NỔI BẬT
-						<!-- </div> -->
-					</div>
-				</div>
+				<div class="col-sm-9">					
+					<h1>SẢN PHẨM CỦA TÔI</h1>
+					<table width="100%" cellpadding="0" cellspacing="0" border="0" class="table-pay">
+						<tbody>
+							<tr>
+								<th width="15%">Sản phẩm</th>
+								<th>Tên sản phẩm</th>
+								<th>Thành tiền</th>
+								<th>Xóa</th>
+							</tr>
+							<tr>
+								<td>
+									<a href="lego-so-canh-sat.html"><img href="lego-so-canh-sat.html" src="img/lego-so-canh-sa.jpg"/></a>
+								</td>
+								<td>
+									<p>LEGO CITY 60047 SỞ CẢNH SÁT</p>
+									<p class="price-numb">
+										<span>
+											Giá: <strong>3.450.000 VNĐ</strong>
+										</span> x 
+										<span>
+											 Số lượng : <input
+											style="width:40px"
+											type="number"
+											value="1"
+											>
+										</span>
+									</p>
+								</td>
+								<td>
+									<strong id="price_count_product_722">
+										3.450.000 VNĐ
+									</strong>
+								</td>
+								<td><span class="ic-del" >x</span></td>
+							</tr>
+							<tr id="additional_fee">
+								<td colspan="2">Phụ phí giao hàng toàn quốc <br/>(MIỄN PHÍ cho đơn hàng giá trị từ 500.000đ trở lên và trong phạm vi bán kính 7km tính từ trụ sở của TheToyStore)<br/>
+									Với các đơn hàng có giá trị dưới 500.000 đồng và/hoặc ở ngoài bán kính từ trụ sở của TheToyStore từ 7km đến 14km : phí 35.000/đơn hàng, từ 15km đến 25km : phí 65.000/đơn hàng, trên 25 km : gởi theo dịch vụ bưu điện
+									<br/>
+								</td>
+								<td>
+									<strong>35.000 VNĐ</strong>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="colspan-l">
+									<a href="index.html"
+									title="Tiếp tục mua hàng"
 
-				<div class="col-xs-12 col-md-3 col-sm-3">
-					<div class="thumbnail">
-						<div class="w-img">
-							<a href="lego-so-canh-sat.html"><img href="lego-so-canh-sat.html" src="img/lego-so-canh-sa.jpg"/></a><br><br>
-						</div>
-						<a href="#"><h4>Lego City 60047 Sở Cảnh Sát</h4></a>
-						<h3> 3.450.000 </h3>
-						<a href="gio-hang.html" class="btn btn-danger btn-book btn-cart cart" data-product-id="52847e4895af3b1fc01031e6" title="Thêm vào giỏ hàng"><i class="ic-cart glyphicon glyphicon-shopping-cart"></i> Thêm vào giỏ</a><i class="fa fa-shopping-cart"></i>
-					</div>
-				</div>
+									>
+									<span class="ic-back"></span>
+									<strong style="color:blue">Tiếp tục mua hàng</strong>
+								</a>
+							</td>
+							<td colspan="2" class="colspan-r">
+								<strong>Tổng tiền: <span class="clnote" id="price_count_product_total">3.485.000 VNĐ</span></strong>
+								<input type="hidden" name="total_price" id="total_price" value="55000">                    
+								<input type="hidden" name="additional_fee" id="additional_fee" value="0">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
 
-				<div class="col-xs-12 col-md-3 col-sm-3">
-					<div class="thumbnail">
-						<div class="w-img">
-							<a href="lego-so-canh-sat.html"><img src="img/bang-lat-chu-ta.jpg"/></a>
-						</div>
-						<a href="lego-so-canh-sat.html"><h4>Bảng lật chữ cái tiếng Anh</h4></a>
-						<h3> 500.000 </h3>
-						<a href="gio-hang.html" class="btn btn-danger btn-book btn-cart cart" data-product-id="52847e4895af3b1fc01031e6" title="Thêm vào giỏ hàng"><i class="ic-cart glyphicon glyphicon-shopping-cart"></i> Thêm vào giỏ</a><i class="fa fa-shopping-cart"></i>
-					</div>
-				</div>
+				<div class="contact">
+        <div class="titbox"><strong>Thông tin đặt hàng</strong>
+            <em class="note">(Quý khách vui lòng cung cấp thông tin chính xác, để Subin có thể phục vụ kịp thời nhất.)</em>
+        </div>
+        <div class="boxstyle">
+            <ul class="regedit">
+                <li class="clearfix">
+                    <input value=""
+                           type="text"
+                           placeholder="Họ tên người mua"
+                           name="cart_name"
+                           id="cart_name">
+                                        <span class="clnote">*</span>
+                                    </li>
+                <li class="clearfix">
+                    <input value=""
+                           type="text"
+                           placeholder="Số điện thoại"
+                           name="cart_phone"
+                           id="cart_phone">
+                                        <span class="clnote">*</span>
+                                    </li>
+                <li class="clearfix">
+                    <input value=""
+                           type="text"
+                           placeholder="Email đăng ký"
+                           name="cart_email"
+                           id="cart_email">
+                </li>
+                <li class="clearfix">
+                    <textarea name="cart_add"
+                              id="cart_add"
+                              style="height:120px"
+                              placeholder="Địa chỉ giao hàng"></textarea>
+                    
+                                        <span class="clnote">*</span>
+                                    </li>
+                <li class="clearfix">
+                    <textarea name="cart_notice"
+                              placeholder="Ghi chú giao hàng"
+                              id="cart_notice"
+                              style="height:120px"></textarea>
+                </li>
+                <li class="clearfix">
+                    <p class="note"><em>Các trường ( <strong class="clnote">*</strong> ) là thông tin bắt buộc</em></p>
+                    <button type="submit"
+                            onclick="if (confirm('Bạn có muốn thanh toán bây giờ không?')){ orderProduct('/cart/orderProduct','/cart/finish')}"
+                            class="bt-style">Đặt hàng<span class="ic-submit"></span></button>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-				<div class="col-xs-12 col-md-3 col-sm-3">
-					<div class="thumbnail">
-						<div class="w-img">
-							<a href="lego-so-canh-sat.html"><img src="img/dan-organ.jpg"/></a><br><br>
-						</div>
-						<a href="lego-so-canh-sat.html"><h4>Đàn Organ 37 phím</h4></a>
-						<h3> 295.000 </h3>
-						<a class="btn btn-danger btn-book btn-cart cart" data-product-id="52847e4895af3b1fc01031e6" title="Thêm vào giỏ hàng"><i class="ic-cart glyphicon glyphicon-shopping-cart"></i> Thêm vào giỏ</a><i class="fa fa-shopping-cart"></i>
-					</div>
-				</div>
 
-				<div class="col-sm-9">
-					<!-- <div class="border-spnb"> -->
-					<div class="spm">
-						SẢN PHẨM MỚI
-						<!-- 	</div> -->
-					</div>
 
-				</div>
-
-				<div class="col-xs-12 col-sm-3 col-md-3">
-
-					<div class="thumbnail">
-						<div class="w-img">
-							<a href="lego-so-canh-sat.html"><img src="img/rubik.jpg"/></a>
-						</div>
-						<a href="lego-so-canh-sat.html"><h4>Đồ chơi Rubik 3x3x3</h4></a>
-						<h3> 79.000 </h3>
-						<a class="btn btn-danger btn-book btn-cart cart" data-product-id="52847e4895af3b1fc01031e6" title="Thêm vào giỏ hàng"><i class="ic-cart glyphicon glyphicon-shopping-cart"></i> Thêm vào giỏ</a><i class="fa fa-shopping-cart"></i>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-3 col-md-3">
-					<div class="thumbnail">
-						<div class="w-img">
-							<a href="lego-so-canh-sat.html"><img src="img/do-choi-xep-hinh-lego.jpg"/></a>
-						</div>
-						<a href="lego-so-canh-sat.html"><h4> Lego Classic 10692</h4></a>
-						<h3> 499.000 </h3>
-						<a class="btn btn-danger btn-book btn-cart cart" data-product-id="52847e4895af3b1fc01031e6" title="Thêm vào giỏ hàng"><i class="ic-cart glyphicon glyphicon-shopping-cart"></i> Thêm vào giỏ</a><i class="fa fa-shopping-cart"></i>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-3 col-md-3">
-					<div class="thumbnail">
-						<div class="w-img">
-							<a href="lego-so-canh-sat.html"><img src="img/bo-xep-hinh-55-chi-tiet2.jpg" /></a>
-						</div>
-						<a href="lego-so-canh-sat.html"><h4>Bộ xếp hình 55 chi tiết</h4></a>
-						<h3> 195.000 </h3>
-						<a class="btn btn-danger btn-book btn-cart cart" data-product-id="52847e4895af3b1fc01031e6" title="Thêm vào giỏ hàng"><i class="ic-cart glyphicon glyphicon-shopping-cart"></i> Thêm vào giỏ</a><i class="fa fa-shopping-cart"></i>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 
 </content>

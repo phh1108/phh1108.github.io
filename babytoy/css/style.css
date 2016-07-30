@@ -30,9 +30,10 @@
 
 }
 
-/*@media (min-width: 768px){
-	.navbar-nav>li>a {
+@media (min-width: 768px){
+	.navbar-nav>li>a{
 		display: none
+		font-size: 12px;
 	}
 	
 	.thumbnail {
@@ -41,7 +42,7 @@
 
 	.w-img {
 		height: 160px;
-		overflow-y: hidden;
+		/*overflow-y: hidden;*/
 	}
 
 	h4 {
@@ -52,63 +53,67 @@
 		font-size: 21px;
 	}
 }
-*/
+
 /*@media(min-width: 992px){*/
 	*{
 		box-sizing: border-box;
 	}
 
+	li,ul{
+		list-style: none;
+	}
+
 	/*hinh nen*/
-	body{
+	/*body{
 		background: url("../img/background.jpg") center center no-repeat;
 		background-attachment: fixed;
-	}
+		}*/
 
-	/*can chinh 2 ben */
-	.container {
-		padding-right: 0px;
-		padding-left: 0px;
-	}
+		/*can chinh 2 ben */
+		.container {
+			padding-right: 0px;
+			padding-left: 0px;
+		}
 
-	h1{
-		color: red;
-		text-align: center;
-	}
+		h1{
+			color: red;
+			text-align: center;
+		}
 
-	/*Màu chữ thanh menu*/
-	.navbar-default .navbar-nav>li>a {
-		color: white;
-		font-size: 14px;
-	}
+		/*Màu chữ thanh menu*/
+		.navbar-default .navbar-nav>li>a {
+			color: white;
+			font-size: 14px;
+		}
 
-	/*mau thanh menu tren*/
-	.top .navbar-brand .menu .navbar-brand{
-		color:white;
+		/*mau thanh menu tren*/
+		.top .navbar-brand .menu .navbar-brand{
+			color:white;
 
-	}
+		}
 
-	/* div trang chủ*/
-	.navbar-default .navbar-brand{
-		/*border-right:1px dashed grey;*/
-		color:white;
-	}
-	.navbar-default .navbar-brand:hover{
-		color: #F9FF00;
-	}
+		/* div trang chủ*/
+		.navbar-default .navbar-brand{
+			/*border-right:1px dashed grey;*/
+			color:white;
+		}
+		.navbar-default .navbar-brand:hover{
+			color: #F9FF00;
+		}
 
-	.navbar-brand{
-		font-size: 15px;
-	}
-	.navbar-default .tieude:hover {
-		color: white;
-		background-color: transparent;
-	}
-	.navbar{
+		.navbar-brand{
+			font-size: 15px;
+		}
+		.navbar-default .tieude:hover {
+			color: white;
+			background-color: transparent;
+		}
+		.navbar{
 
-		margin-bottom: 0px;
-		background:#0F6BB5;
-	}
-	/*border cua menu*/
+			margin-bottom: 0px;
+			background:#0F6BB5;
+		}
+		/*border cua menu*/
 /*.border-ul li {
 	border-right:1px dashed grey;
 	}*/
@@ -208,10 +213,44 @@
 		color: black;
 	}
 
+	/*slide*/
 	.carousel-control{
-		opacity: 0;
+		display: block;
 	}
 
+	.carousel-control.left {
+		background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0) 0,rgba(0,0,0,.0001) 100%);
+		background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+		background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+		background-image: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0,0,0,.0001) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+		background-repeat: repeat-x;
+	}
+	.carousel-control.right {
+		right: 0;
+		left: auto;
+		background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+		background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+		background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+		background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0, 0, 0, 0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+		background-repeat: repeat-x;
+	}
+	.carousel-control {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 5%;
+		font-size: 20px;
+		color: #fff;
+		text-align: center;
+		text-shadow: 0 1px 2px rgba(0,0,0,.6);
+		background-color: rgba(0,0,0,0);
+		filter: alpha(opacity=50);
+		opacity: .5;
+	}
+	/*end slide*/
 
 	/*nút back to top*/
 	.back-to-top{
@@ -227,10 +266,10 @@
 
 	.spnb{
 		font-size: 25px;
-		color: #0020D4;
+		color: white;
 		text-align: center;
 		width: 100%;	
-		background: #FFED00;
+		background: #0F6BB5;
 		padding: 2px;
 		margin-top: 20px;
 		margin-bottom: 10px;
@@ -239,10 +278,10 @@
 	
 	.spm{
 		font-size: 25px;
-		color: #0020D4;
+		color: white;
 		text-align: center;
 		width: 100%;	
-		background: #FFED00;
+		background: #0F6BB5;
 		padding: 2px;
 		margin-top: 20px;
 		margin-bottom: 10px;
@@ -259,7 +298,7 @@
 
 
 	.end{
-		border-bottom: 1px dashed #ccc;
+		/*border-bottom: 1px dashed #ccc;*/
 		padding-top: 10px;
 	}
 
@@ -284,68 +323,153 @@
 	}
 
 	/*đổi banner*/
-	.move1{
+	/*.move1{
 		color: #FFF;
 		background: #f96489;
+		}*/
+
+		.modal-footer .dk{
+			color: blue;
+		}
+
+
+		.modal-footer .submit{
+			/*		background: blue;*/
+			color:black;	
+		}
+
+		.nav-tabs>li.active>a{
+			color: #0F6BB5;
+		}
+
+		.tabs>li.active>a:hover {
+			color: blue;
+		}
+		/*img lego*/
+
+		#chitiet img{
+			/*max-width: 99%;*/
+			margin: 10px auto;
+			border: 5px solid #fff;
+			box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+		}
+
 	}
 
-	.modal-footer .dk{
-		color: blue;
+	.#chitiet{
+		text-align: center;
+	}
+
+	.lego-img{
+		margin-top: 20px;
 	}
 
 
-	.modal-footer .submit{
-		/*		background: blue;*/
-		color:black;	
+	/*căn chỉnh thanh footer*/
+	ul.footer-links{
+		padding:15px;
+	}
+	/*}*/
+
+	.list-sp{
+		font-size: 25px;
+		color: #0020D4;
+		text-align: center;
+		width: 100%;	
+		background: #FFED00;
+		padding: 2px;
+		margin-top: 20px;
+		margin-bottom: 10px;
 	}
 
-	.nav-tabs>li.active>a{
-		color: #0F6BB5;
+	.navbar-default .navbar-nav>li>a:hover{
+		color: #F9FF00;
 	}
 
-	.tabs>li.active>a:hover {
-		color: blue;
-	}
-	/*img lego*/
+	a:hover {
+		color: #F9FF00;
 
-	#chitiet img{
-		/*max-width: 99%;*/
-		margin: 10px auto;
-		border: 5px solid #fff;
-		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 	}
 
+
+	.carousel-inner :hover{
+		color: #333;
+		background: #E51448;
+	}
+
+	/*Danh mục sp*/
+	.navbar-nav>li>.dropdown-menu{
+		background-color: #0F6BB5;
+	}
+
+	/*màu danh mục*/
+	.dropdown-menu>li>a{
+		color: white;
+	}
+
+	.dropdown-menu>li>a:hover {
+		background: none;
+		color: #FFED00;
+
+	}
+
+	/*logo*/
+	#logo img{
+		width: 20%;
+		height: 10%;
+	}
+
+	/*đăng kí, đăng nhập*/
+	#register.navbar-nav>li>a{
+		font-size: 16px;
+	}
+
+
+	/*table*/
+
+	.table-pay {
+		border-left: none;
+		margin-bottom: 15px;
+		border: 1px solid #ebebeb;
+	}
+
+	.tr {
+		display: table-row;
+		vertical-align: inherit;
+		border-color: inherit;
+	}
+
+	.table-pay td {
+		border-top: 1px solid #ebebeb;
+		text-align: center;
+		border-left: 1px solid #ebebeb;
+		padding: 10px;
+		display: table-cell;
+		vertical-align: inherit;
+		font-family: Arial,sans-serif,Tahoma,Helvetica;
+		font-size: 16px;
+	}
+
+	.table-pay th {
+		border-left: 1px solid #ebebeb;
+		padding: 10px;
+		display: table-cell;
+		vertical-align: inherit;
+	}
+
+	.table-pay td img{
+		width: 100%;
+	}
+
+	/*thanh xóa sp trang giỏ hàng*/
+	.ic-del {
+    color: red;
 }
 
-.#chitiet{
-	text-align: center;
+.ic-black >a{
+	color: blue;
 }
 
-.lego-img{
-	margin-top: 20px;
+#cart_name, #cart_phone, #cart_email, #cart_add, #cart_notice{
+	width: 98%;
 }
-
-
-/*căn chỉnh thanh footer*/
-ul.footer-links{
-	padding:15px;
-}
-/*}*/
-
-.list-sp{
-	font-size: 25px;
-	color: #0020D4;
-	text-align: center;
-	width: 100%;	
-	background: #FFED00;
-	padding: 2px;
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
-
-.navbar-default .navbar-nav>li>a:hover{
-	color: #F9FF00;
-}
-
-a:hover {
-    color: #F9FF00;
