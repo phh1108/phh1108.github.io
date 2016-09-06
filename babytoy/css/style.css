@@ -1,5 +1,12 @@
 @media (max-width: 767px){
 
+/**{
+	margin: 2px;
+}*/
+
+*{
+	padding: 3px;
+}
 	.sale img {
 		height: 30px;
 		width: 100%;
@@ -26,11 +33,18 @@
 		margin-top: 20px;
 		margin-bottom: 10px;
 	}
-
+	.navbar-toggle {
+		display: none;
+	}
 
 }
 
 @media (min-width: 768px){
+
+	.navbar-toggle {
+		display: none;
+	}
+
 	.navbar-nav>li>a{
 		display: none
 		font-size: 12px;
